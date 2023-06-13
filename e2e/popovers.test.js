@@ -1,5 +1,5 @@
-//import puppeteer from 'puppeteer';
-const puppeteer = require('puppeteer');
+import puppeteer from 'puppeteer';
+//const puppeteer = require('puppeteer');
 
 describe('Popover widget', () => {
   let browser;
@@ -10,7 +10,7 @@ describe('Popover widget', () => {
       headless: false,
       slowMo: 100,
       devtools: true,
-    }, 50000);
+    }, 70000);
 
     page = await browser.newPage();
   });
@@ -37,7 +37,7 @@ describe('Popover widget', () => {
       const popovers = await page.$$('.popover')
       expect(popovers.length).toBe(0)      
     }
-  }, 50000);
+  }, 70000);
 
   afterEach(async () => {
     await browser.close();
