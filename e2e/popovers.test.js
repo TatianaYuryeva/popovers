@@ -6,13 +6,13 @@ describe('Popover widget', () => {
 
   beforeEach(async () => {
     browser = await puppeteer.launch({
-      headless: "new",
+      headless: false,
       slowMo: 100,
       devtools: true,
-    }, 60000);
+    });
 
     page = await browser.newPage();
-  });
+  }, 60000);
 
   test('Widget should render on page start', async () => {
     await page.goto('http://localhost:9000');
