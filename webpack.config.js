@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  transformIgnorePatterns: [`/node_modules/(?!${popovers})`],
   devServer: {
     port: 9000,
   },
