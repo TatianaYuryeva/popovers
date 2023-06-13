@@ -13,7 +13,7 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist",
-    "e2e": "jest --testPathPattern=./e2e/ --runInBand"
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand --transformIgnorePatterns \"node_modules/(?!puppeteer)/\""
   },
   "author": "",
   "license": "ISC",
@@ -43,8 +43,5 @@
     "webpack": "^5.85.1",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
-  },
-  "transform": {
-    "\\.js$": "<rootDir>/node_modules/babel-jest"
   }
 }

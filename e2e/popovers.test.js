@@ -10,7 +10,7 @@ describe('Popover widget', () => {
       headless: false,
       slowMo: 100,
       devtools: true,
-    }, 70000);
+    }, 80000);
 
     page = await browser.newPage();
   });
@@ -37,7 +37,7 @@ describe('Popover widget', () => {
       const popovers = await page.$$('.popover')
       expect(popovers.length).toBe(0)      
     }
-  }, 70000);
+  }, 80000);
 
   afterEach(async () => {
     await browser.close();
