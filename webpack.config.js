@@ -3,7 +3,6 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  transformIgnorePatterns: [`/node_modules/(?!${puppeteer})`],
   devServer: {
     port: 9000,
   },
