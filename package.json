@@ -45,8 +45,8 @@
     "webpack-dev-server": "^4.15.0"
   },
   "jest": {
-    "transform": {
-      "\\.js$": "<rootDir>/node_modules/babel-jest"
+    "moduleNameMapper": {
+      "puppeteer": "node_modules/puppeteer"
     }
   }
 }
