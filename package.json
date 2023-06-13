@@ -45,11 +45,6 @@
     "webpack-dev-server": "^4.15.0"
   },
   "jest": {
-    "moduleNameMapper": {
-      "moduleNameMapper": {
-        "/puppeteer/": "node_modules/puppeteer"
-      },
-      "resolver": "undefined"
-    }
+    "preset": "jest-puppeteer"
   }
 }
