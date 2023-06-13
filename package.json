@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "[![Build status](https://ci.appveyor.com/api/projects/status/ta20lpwso785uawq?svg=true)](https://ci.appveyor.com/project/TatianaYuryeva/testing)",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --config webpack.prod.js",
@@ -14,7 +13,7 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist",
-    "e2e": "jest --testPathPattern=./e2e/ --runInBand"
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand --transformIgnorePatterns \"node_modules/(?!popovers/\""
   },
   "author": "",
   "license": "ISC",
