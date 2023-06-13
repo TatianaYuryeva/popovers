@@ -13,7 +13,7 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist",
-    "e2e": "jest --testPathPattern=./e2e/ --runInBand --transformIgnorePatterns \"node_modules/(?!puppeteer)/\""
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand --transformIgnorePatterns 'node_modules/(?!(puppeteer)/)'"
   },
   "author": "",
   "license": "ISC",
