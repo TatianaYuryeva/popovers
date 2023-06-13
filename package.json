@@ -46,7 +46,10 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "puppeteer": "node_modules/puppeteer"
+      "moduleNameMapper": {
+        "/puppeteer/": "node_modules/puppeteer"
+      },
+      "resolver": "undefined"
     }
   }
 }
