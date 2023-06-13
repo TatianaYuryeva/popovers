@@ -1,0 +1,35 @@
+.widget {
+  width: 300px;
+  margin: auto auto;
+  padding-top: 120px;
+}
+
+.btn {
+  margin-bottom: 20px;
+}
+
+.popover {
+  position: absolute;
+  z-index: 999;
+
+  width: 240px;
+
+  background: #fff;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  border: #a0a0a0 1px solid;  
+}
+
+.popover-title {
+  padding: 8px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  border-bottom: #a0a0a0 1px solid;
+}
+
+.popover-text {
+  padding: 8px;
+
+  font-size: 14px;
+}
