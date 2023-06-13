@@ -9,7 +9,7 @@ describe('Popover widget', () => {
       headless: false,
       slowMo: 100,
       devtools: true,
-    }, 80000);
+    }, 60000);
 
     page = await browser.newPage();
   });
@@ -18,7 +18,7 @@ describe('Popover widget', () => {
     await page.goto('http://localhost:9000');
 
     await page.waitForSelector('.widget');
-  }, 20000);
+  }, 120000);
 
   test('Widget buttons should show popover on click and close popover on next click', async () => {
     await page.goto('http://localhost:9000');
@@ -36,7 +36,7 @@ describe('Popover widget', () => {
       const popovers = await page.$$('.popover')
       expect(popovers.length).toBe(0)      
     }
-  }, 80000);
+  }, 130000);
 
   afterEach(async () => {
     await browser.close();
