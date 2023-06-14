@@ -9,6 +9,7 @@ describe('Popover widget', () => {
       headless: false,
       slowMo: 100,
       devtools: true,
+      args: ["--no-sandbox"]
     });
 
     page = await browser.newPage();
