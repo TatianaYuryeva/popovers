@@ -1,4 +1,11 @@
 import { Popover } from "./popover";
+import { Widget } from "./widget"
+
+const container = document.querySelector(".container");
+const widget = new Widget(container)
+widget.bindToDOM()
+
+console.log(widget)
 
 const button1 = document.querySelector('.btn1');
 const button2 = document.querySelector('.btn2');
