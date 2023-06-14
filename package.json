@@ -45,6 +45,9 @@
     "webpack-dev-server": "^4.15.0"
   },
   "jest": {
-    "preset": "jest-puppeteer"
+    "preset": "jest-puppeteer",
+    "globals": {
+      "URL": "http://localhost:9000"
+    }
   }
 }
